@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Tail Is Not a Wall: a rebuttal to the Peak Reddit Hypothesis.">
+  <meta name="theme-color" content="#10100e">
+  <title>The Tail Is Not a Wall</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="mark" href="#top" aria-label="The Tail Is Not a Wall home">C∴</a>
+    <nav aria-label="Page sections">
+      <a href="#error">The error</a>
+      <a href="#arguments">Arguments</a>
+      <a href="#test">A better test</a>
+    </nav>
+    <span class="issue">COUNTERTHESIS 001</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">A rebuttal to the Peak Reddit Hypothesis</p>
+        <h1>The tail<br>is not<br><em>a wall.</em></h1>
+        <p class="lede">
+          PRH notices a real danger: fluency can impersonate intelligence. Then it
+          makes an unsupported leap. A mind expressed in human language is not
+          therefore bounded by existing human thought.
+        </p>
+        <a class="read-link" href="#error">Inspect the category error <span>↓</span></a>
+      </div>
+
+      <div class="hero-figure">
+        <div class="figure-head">
+          <span>CAPABILITY / SEARCH DEPTH</span>
+          <button id="model-toggle" type="button" aria-pressed="false">
+            <span class="toggle-dot"></span>
+            Add contact with reality
+          </button>
+        </div>
+        <svg id="frontier-chart" viewBox="0 0 720 560" role="img" aria-labelledby="chart-title chart-desc">
+          <title id="chart-title">Peak Reddit ceiling and open frontier</title>
+          <desc id="chart-desc">A curve approaches the proposed Peak Reddit ceiling. With grounded search enabled, paths continue beyond it.</desc>
+          <defs>
+            <linearGradient id="line-glow" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#d8ff48" stop-opacity=".3"/>
+              <stop offset="1" stop-color="#d8ff48"/>
+            </linearGradient>
+            <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g class="grid">
+            <path d="M64 42V500H684"/>
+            <path d="M64 408H684M64 316H684M64 224H684M64 132H684"/>
+            <path d="M188 42V500M312 42V500M436 42V500M560 42V500"/>
+          </g>
+          <line class="ceiling" x1="64" y1="190" x2="684" y2="190"/>
+          <text class="ceiling-label" x="675" y="174" text-anchor="end">R* / “PEAK REDDIT”</text>
+          <path class="prh-line" d="M64 472 C174 458 226 370 306 286 C374 215 458 194 684 191"/>
+          <g class="open-paths">
+            <path d="M64 472 C174 458 226 370 306 286 C374 215 414 194 458 185 C512 174 554 120 610 82 C636 64 658 50 684 36"/>
+            <path d="M458 185 C514 190 552 156 594 130 C626 110 655 108 684 112"/>
+            <path d="M458 185 C504 162 540 168 574 154 C618 136 650 94 684 72"/>
+            <circle cx="610" cy="82" r="5"/>
+            <circle cx="594" cy="130" r="5"/>
+            <circle cx="574" cy="154" r="5"/>
+          </g>
+          <g class="annotation prh-annotation">
+            <line x1="430" y1="235" x2="483" y2="199"/>
+            <text x="420" y="250" text-anchor="end">PRH calls this</text>
+            <text x="420" y="270" text-anchor="end">a limit</text>
+          </g>
+          <g class="annotation open-annotation">
+            <line x1="494" y1="100" x2="555" y2="124"/>
+            <text x="484" y="86" text-anchor="end">grounded search</text>
+            <text x="484" y="106" text-anchor="end">changes the process</text>
+          </g>
+          <text class="axis-label" x="374" y="542" text-anchor="middle">SCALE + MEMORY + TOOLS + FEEDBACK</text>
+        </svg>
+        <p id="figure-caption" class="figure-caption">
+          Static imitation can saturate. That says nothing about systems that act,
+          test, measure, and revise.
+        </p>
+      </div>
+    </section>
+
+    <section id="error" class="section error-section">
+      <div class="section-index">01</div>
+      <div class="section-intro">
+        <p class="kicker">The category error</p>
+        <h2>Language is an interface,<br>not a certificate of origin.</h2>
+      </div>
+      <div class="claim-pair">
+        <article class="claim prh-claim">
+          <span>PRH says</span>
+          <p>If an output can be rendered as familiar human discourse, it remains inside the human distribution.</p>
+        </article>
+        <div class="therefore" aria-hidden="true">≠</div>
+        <article class="claim counter-claim">
+          <span>The rebuttal</span>
+          <p>A novel theorem still uses inherited symbols. A new experiment still ends in an ordinary sentence. Legibility describes the interface, not the search that produced the result.</p>
+        </article>
+      </div>
+      <p class="big-statement">
+        The map being readable<br>
+        does not mean the territory<br>
+        was already explored.
+      </p>
+    </section>
+
+    <section id="arguments" class="section arguments-section">
+      <div class="section-index">02</div>
+      <div class="section-intro compact">
+        <p class="kicker">Three breaks in the ceiling</p>
+        <h2>PRH proves less than it claims.</h2>
+      </div>
+      <div class="arguments">
+        <article class="argument">
+          <span class="number">A</span>
+          <h3>Novelty is relational</h3>
+          <p>
+            “Built from known primitives” is not the same as “already known.” Human
+            discovery is also recombination under constraint. A result can be new to
+            civilization without requiring an alien alphabet.
+          </p>
+        </article>
+        <article class="argument">
+          <span class="number">B</span>
+          <h3>The distribution can answer back</h3>
+          <p>
+            Code execution, experiments, sensors, theorem checkers, markets, and
+            self-play provide evidence that was not sitting in the prompt. Once the
+            world supplies error signals, the model is no longer only completing text.
+          </p>
+        </article>
+        <article class="argument">
+          <span class="number">C</span>
+          <h3>Superhuman need not mean alien</h3>
+          <p>
+            A system can remain interpretable while searching more hypotheses, retaining
+            more evidence, and revising faster than any person. “No alien move” does not
+            establish “no superhuman mind.”
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section falsifier-section">
+      <div class="section-index">03</div>
+      <div class="falsifier-copy">
+        <p class="kicker">The falsifier that eats itself</p>
+        <h2>PRH asks for a discovery humans cannot recognize, then requires humans to recognize that it worked.</h2>
+        <p>
+          Its proposed disproof is a durable frame that no human culture can initially
+          recognize, which later becomes useful and remains irreducible to existing
+          thought. But once people understand a discovery, the theory can redescribe it
+          as a clever recombination. The success erases the evidence that it succeeded.
+        </p>
+      </div>
+      <div class="loop-card" role="img" aria-label="Circular falsification loop">
+        <div class="loop-step"><strong>1</strong><span>Machine produces unfamiliar frame</span></div>
+        <div class="loop-arrow">↓</div>
+        <div class="loop-step"><strong>2</strong><span>Humans learn why it works</span></div>
+        <div class="loop-arrow">↓</div>
+        <div class="loop-step"><strong>3</strong><span>PRH calls it human-legible synthesis</span></div>
+        <div class="loop-return">↺</div>
+      </div>
+    </section>
+
+    <section id="test" class="section test-section">
+      <div class="section-index">04</div>
+      <div class="section-intro compact">
+        <p class="kicker">A better test</p>
+        <h2>Measure discovery prospectively.</h2>
+        <p class="intro-note">Do not ask whether the answer sounds alien. Ask whether the system finds what people did not know.</p>
+      </div>
+      <div class="protocol">
+        <article>
+          <span>01</span>
+          <h3>Hide the answer</h3>
+          <p>Use new problems, sealed data, or future observations that cannot be retrieved from the training corpus.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Give reality a vote</h3>
+          <p>Allow tools and feedback, then require executable code, verified proofs, successful predictions, or reproducible experiments.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Predeclare the bar</h3>
+          <p>Specify novelty, reliability, cost, and human baselines before seeing the output. Do not move the ceiling after a win.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Plot the frontier</h3>
+          <p>Test whether performance actually saturates as search, memory, compute, and feedback increase. An asymptote is data, not a mood.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="verdict">
+      <p class="kicker">Verdict</p>
+      <blockquote>
+        PRH is a good warning against mistaking eloquence for discovery.
+        It is not evidence that discovery has a human ceiling.
+      </blockquote>
+      <p class="final-line">A warning is not an asymptote.</p>
+      <a href="https://www.peakreddithypothesis.com/" rel="noreferrer">Read the hypothesis being answered ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>THE TAIL IS NOT A WALL</span>
+    <span>CALYX / 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
